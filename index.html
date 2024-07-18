@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Blog Post Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor">
+            <h2>Rich Text Editor</h2>
+
+            <div class="input-section">
+                <label for="titleInput">Title:</label>
+                <div id="titleInput" contenteditable="true" class="editable"></div>
+            </div>
+
+            <div class="input-section">
+                <label for="titleLink">Title Link URL:</label>
+                <input type="url" id="titleLink" placeholder="https://example.com">
+            </div>
+
+            <div class="input-section">
+                <label for="headerInput">Header:</label>
+                <div id="headerInput" contenteditable="true" class="editable"></div>
+            </div>
+
+            <div class="input-section">
+                <label for="imageUploadHeader">Upload Header Image:</label>
+                <input type="file" id="imageUploadHeader" accept="image/*">
+            </div>
+
+            <div class="input-section">
+                <label for="headerImageLink">Header Image Link URL:</label>
+                <input type="url" id="headerImageLink" placeholder="https://example.com">
+            </div>
+
+            <div class="input-section">
+                <label for="headerImageLinkTitle">Header Image Link Title:</label>
+                <input type="text" id="headerImageLinkTitle" placeholder="See more about the picture">
+            </div>
+
+            <div class="input-section">
+                <label for="descriptionInput">Description:</label>
+                <div id="descriptionInput" contenteditable="true" class="editable"></div>
+            </div>
+
+            <div class="input-section">
+                <label for="imageUpload1">Upload Image 1:</label>
+                <input type="file" id="imageUpload1" accept="image/*">
+            </div>
+
+            <div class="input-section">
+                <label for="imageUpload2">Upload Image 2:</label>
+                <input type="file" id="imageUpload2" accept="image/*">
+            </div>
+
+            <div class="input-section">
+                <label for="colorPicker1">Choose First Gradient Color for Title and Header:</label>
+                <input type="color" id="colorPicker1">
+            </div>
+
+            <div class="input-section">
+                <label for="colorPicker2">Choose Second Gradient Color for Title and Header:</label>
+                <input type="color" id="colorPicker2">
+            </div>
+
+            <button id="generateButton">Generate Content</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
